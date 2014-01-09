@@ -1,4 +1,7 @@
 virgo-agent-toolkit.github.io
 =============================
 
-virgo org page
+dev
+---
+
+Requires pandoc: http://johnmacfarlane.net/pandoc/installing.html
