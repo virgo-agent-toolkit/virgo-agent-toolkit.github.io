@@ -27,3 +27,9 @@ Virgo provides:
 The core agent is written in C with an embedded [Luvit](http://luvit.io/) runtime. Controller endpoints can be written in any language.
 
 *Come build your agent with us!*
+
+
+Documentation:
+--------------
+
+[virgo-agent-toolkit.github.io/docs](http://virgo-agent-toolkit.github.io/docs/)
