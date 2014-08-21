@@ -1,7 +1,19 @@
 virgo-agent-toolkit.github.io
 =============================
 
-dev
----
+### Requirements
 
-Requires pandoc: http://johnmacfarlane.net/pandoc/installing.html
+- ruby
+- github-pages gem (includes jekyll & sass)
+
+### Setup
+
+```
+bundle install
+```
+
+### Local Server
+
+```
+bundle exec jekyll serve -w
+```

@@ -1,0 +1,117 @@
+body {
+  padding-bottom: 30px;
+}
+
+.jumbotron {
+  h1 {
+    color: #327;
+    font-weight: 400;
+    font-family: 'Amatic SC';
+  }
+
+  .lead {
+    margin-bottom: 30px;
+    color: #aaa;
+  }
+}
+
+.octo {
+  width: 100%;
+  max-width: 220px;
+}
+
+.caption {
+  font-size: 1.3em;
+  color: #aaa;
+  margin: 2em 6em 2em 2em;
+}
+
+h2 {
+  color: #327;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+p em {
+  color: #327;
+}
+
+a {
+  text-decoration: none;
+}
+
+code{
+  white-space: pre;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.jumbotron .container {
+  max-width: 1100px;
+}
+
+.jumbotron {
+  background: white;
+}
+
+// buttons
+//
+
+.btn {
+  font-weight: 200;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #327;
+  border-color: #327;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  color: #ffffff;
+  background-color: #5541A3;
+  border-color: #5541A3;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+    color: #327;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-primary.btn-outline:active,
+.btn-success.btn-outline:hover,
+.btn-success.btn-outline:active,
+.btn-info.btn-outline:hover,
+.btn-info.btn-outline:active,
+.btn-warning.btn-outline:hover,
+.btn-warning.btn-outline:active,
+.btn-danger.btn-outline:hover,
+.btn-danger.btn-outline:active {
+    color: #fff;
+}
