@@ -1,0 +1,24 @@
+digraph agent {
+  overlap = false;
+  remincross = true;
+  rankdir = LR;
+  node [shape = box];
+	agent -> resource;
+  endpoint -> agent;
+  application -> endpoint;
+  user -> application;
+
+  subgraph cluster_host {
+    style = dotted;
+    label = "host";
+    agent;
+    resource;
+  }
+
+  subgraph cluster_server {
+    style = dotted;
+    label = "server";
+    application;
+    endpoint;
+  }
+}

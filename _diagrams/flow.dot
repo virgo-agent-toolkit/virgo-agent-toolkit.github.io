@@ -1,0 +1,27 @@
+digraph flow {
+
+  spline = false;
+  overlap = false;
+  remincross = true;
+  rankdir = LR;
+  node [shape = box];
+
+  root = endpoint;
+
+	agent -> "agent feature 1" [label="stream"];
+  "agent feature 1" -> agent [weight=0];
+
+  agent -> "agent feature 2" [label="stream"];
+  "agent feature 2" -> agent [weight=0];
+
+  endpoint -> agent ;
+  agent -> endpoint [weight=0];
+
+  endpoint -> "endpoint feature 1" [label="stream", weight=0];
+  "endpoint feature 1" -> endpoint ;
+
+  endpoint -> "endpoint feature 2" [label="stream", weight=0];
+  "endpoint feature 2" -> endpoint ;
+
+
+}

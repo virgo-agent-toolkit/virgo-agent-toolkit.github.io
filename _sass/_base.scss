@@ -10,9 +10,12 @@ body {
   }
 
   .lead {
-    margin-bottom: 30px;
     color: #aaa;
   }
+
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
 }
 
 .octo {
@@ -26,8 +29,8 @@ body {
   margin: 2em 6em 2em 2em;
 }
 
-h2 {
-  color: #327;
+h1, h2, h3 {
+  color: #327;  
   font-weight: 100;
   margin-bottom: 20px;
 }

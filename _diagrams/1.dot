@@ -1,0 +1,9 @@
+digraph agent {
+  overlap = false;
+  remincross = true;
+  rankdir = LR;
+  node [shape = box];
+	agent -> resource;
+  endpoint -> agent;
+  "application or user" -> endpoint;
+}
