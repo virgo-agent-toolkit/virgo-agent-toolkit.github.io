@@ -7,11 +7,11 @@ title: Virgo Agent Toolkit
 
 We think of an agent as a small program responsible for interfacing to some resource on behalf of a user or application. We call the corresponding program (or library) responsible for interfacing to the agent on behalf of the application an 'endpoint'.
 
-![](./images/1.dot.png)
+<img class="diagram" src="./images/1.dot.png" alt="">
 
 Often this agent is running on a remote host and the endpoint is running locally to the service which is using it.
 
-![](./images/2.dot.png)
+<img class="diagram" src="./images/2.dot.png" alt="">
 
 ## How can I make an agent?
 
