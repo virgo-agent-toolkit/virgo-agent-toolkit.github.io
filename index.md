@@ -17,7 +17,7 @@ Often this agent is running on a remote host and the endpoint is running locally
 
 An agent can be this simple:
 
-<pre>
+{% highlight lua %}
 local agent = require('virgo').agent
  
 # the updates modules adds update-specific behavior
@@ -27,11 +27,11 @@ local updates = require('updates')
 local file_config = require('file_config')
  
 return agent([updates, file_config])
-</pre>
+{% endhighlight %}
 
 Here's an agent and endpoint in nodejs:
 
-<pre>
+{% highlight javascript %}
 var virgo = require('..');
 
 var agent = virgo.agent;
@@ -44,7 +44,7 @@ endpoint([heartbeats(function(hb) {
 })]).run();
 
 agent([heartbeats()]).run();
-</pre>
+{% endhighlight %}
 
 ## So why is making agents hard?
 
