@@ -74,6 +74,12 @@ The [Virgo base agent](https://github.com/virgo-agent-toolkit/virgo-base-agent) 
 
 Many of these features can be discarded. The [virgo-example-agent](https://github.com/virgo-agent-toolkit/virgo-example-agent) shows the absolute smallest Virgo agent.
 
+### Why Luvit?
+
+[Luvit](http://luvit.io/) offers an efficient dynamic language with a [JIT](http://luajit.org/), great [FFI](http://luajit.org/ext_ffi_tutorial.html), a friendly [C API](http://www.lua.org/pil/24.html), and a [familiar high-level developer API](http://nodejs.org/documentation/api/) for [asynchronous programming](http://nikhilm.github.io/uvbook/basics.html).
+
+Writing cross-platform agents which can be easily and clearly introspected by common debugging tools (such as strace, gdb) is best done in C, but the business logic that an application using agents needs on the agent is often best written in a dynamic language. Dynamic languages are usually greedy for RAM or CPU, are difficult to embed transparently in a C program, or have synchronous models which introduce the complexities of multi-threading into agent applications (often all three). Luajit is incredibly performant, Lua is designed with an easy-to-use C API in mind, and Luvit embeds [Libuv](https://github.com/joyent/libuv) so asynchronous Luvit scripts can share a single process with the Libuv event loop.
+
 ## Virgo libraries
 
 - [Virgo.js](https://github.com/virgo-agent-toolkit/virgo.js)
